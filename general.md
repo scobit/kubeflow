@@ -16,6 +16,7 @@ dex.auth.svc.cluster.local.
  
 #### Default Username and Password
 user@example.com
+
 12341234
 
 ### kubeflow namespaces
@@ -45,6 +46,17 @@ kubectl get apiservices v1beta1.custom.metrics.k8s.io
 kubectl delete APIServices v1beta1.custom.metrics.k8s.io
 
 
+#### Default username and password for kcell deploy
+kubeflow.datalake
 
+5%XeaJ%yt%
+
+
+#### Image for test notebooks
+artifactory.kraken.kcell.kz:6555/datalake-jupyterlab-kubeflow:765
+
+
+###
+kubectl -n kubeflow rollout restart deploy
 
 
